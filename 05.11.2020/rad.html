@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forme</title>
+</head>
+<body>
+    <form action="">
+        <fieldeset>
+            <legend>Osnovne informacije</legend>
+            <p>
+                <label>Skola:</label> 
+                <input type="text" value="IT Bootcamp" disabled>
+            </p>
+            <p>
+                <label>Ime i prezime:</label>
+                <input type="text" placeholder="Unesite ime i prezime">
+           </p>
+           <p>
+                <label>Godine:</label>
+                <input type="number" value="18" mine="18" step="1">
+           </p>
+           <p>
+                <label>Email:</label>
+                <input type="email" >
+           </p> 
+           <p>
+               <label>Passvord:</label>
+               <input type="password" >
+           </p>
+           <p>
+               <label>Re-type</label>
+           </p>
+           <p>
+               <label>Odaberite pol</label>
+               Neodredjen<input type="radio" name="pol" value="n" checked>
+               Zenski<input type="radio" name="pol" value="z">
+               Muski<input type="radio" name="pol" value="m">
+           </p>
+           <p>
+               <label> kurs: </label>
+                Web programiranje <input type="radio" name="kurs" value="web">
+                QA<input type="radio" name="kurs">
+            </p>
+            <p>
+                <label>Odaberite programski jezik: </label>
+              PHP<input type="checkbox" name="prog" value="php" checked>
+              JS<input type="checkbox" name="prog" value="js">
+              C<input type="checkbox" name="prog" value="c">
+            Java<input type="checkbox" name="prog" value="java">
+            Pyuthon<input type="checkbox" name="prog" value="py">
+
+            <input type="color" value="#ff0000">
+            <input type="file" size="50"/>
+            </p>
+
+            <p>
+                <label> Najzanimljivija lekcija nedelje</label>
+                
+                    <select name="lakcija" id="">
+                        <option value="html">Osnovni HTML </option>
+                        <option value="tabele">Tabele</option>
+                        <option value="liste">Liste</option>
+                    </select>
+            </p>  
+            <p>
+                <label>Odaberite kurs</label>
+                <select name="selectkurs">
+                    <optgroup label="Beograd">
+                        <option value="vebprog">web programiranje</option>
+                        <option value="Php">PHP</option>
+                    </optgroup>
+                    <optgroup label="Nis">
+                        <option value="css"> Css</option>
+                        <option value="cv">Cv</option>
+                    </optgroup>
+                    <optgroup label="Novi Sad">
+                        <option value="java"> Java</option>
+                    </optgroup>
+
+                </select>
+           
+                
+           
+
+
+
+        </fieldeset>
+    <input type="button" value="potvrdi" onclick="alert('pozdrav')">
+    <input type="reset" value="resetuj">
+    <textarea rows="10" cols="40"></textarea>
+    <input type="submit" value="posalji">
+        
+    </form>
+</body>
+</html>
